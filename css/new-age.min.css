@@ -24,11 +24,11 @@ header .logo  {
  }
  header .header-content .header-content-inner{
 
-   top: 0%;
+   top: 45%;
  }
 
  @media (min-width: 768px){
    header .header-content .header-content-inner{
-      top: 0%;
+      top: 45%;
    }
  }
