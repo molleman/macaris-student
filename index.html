@@ -137,7 +137,6 @@
   dbStats.once("value",function(e){
     hits = e.val().Hits;
     console.log("hits = "+hits);
-    $(document).ready(function(){
       if(hits != 0){
         hits = hits+1;
           dbStats.set({"Hits":(hits)}, function(error) {
@@ -151,7 +150,6 @@
               }
           });
       }
-    });
 
   });
 
