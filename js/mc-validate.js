@@ -247,6 +247,7 @@
 		        $('#mce-'+resp.result+'-response').html(resp.msg);
 		        $('#mc-embedded-subscribe-form').each(function(){
 		            this.reset();
+								console.log("outside refreshbrowser")
 								refreshBroswer();
 		    	});
 
@@ -360,6 +361,7 @@
 }(jQuery));
 
 function refreshBroswer(){
+	console.log("in refreshbrowser")
 	setTimeout(function () {
 
 	         location.reload();
