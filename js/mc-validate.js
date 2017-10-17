@@ -247,6 +247,7 @@
 		        $('#mce-'+resp.result+'-response').html(resp.msg);
 		        $('#mc-embedded-subscribe-form').each(function(){
 		            this.reset();
+								refreshBroswer();
 		    	});
 
 		    // If the form has errors, display them, inline if possible, or appended to #mce-error-response
@@ -357,3 +358,12 @@
     });
 
 }(jQuery));
+
+function refreshBroswer(){
+	setTimeout(function () {
+
+	         location.reload();
+
+	    }, 5000);
+	}
+}
